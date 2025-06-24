@@ -40,7 +40,6 @@
       max-width: 1300px;
       margin: 2rem auto;
       padding: 0 1rem;
-      gap: 2rem;
     }
 
     aside {
@@ -48,6 +47,7 @@
       padding-right: 2rem;
       position: sticky;
       top: 2rem;
+      align-self: flex-start;
     }
 
     .hashtags {
@@ -57,19 +57,34 @@
     }
 
     .hashtags span {
-      background-color: #d8e6d9;
+      background-color: #eaf2ed;
       color: #2e6047;
       padding: 0.5rem 0.8rem;
       border-radius: 20px;
-      font-size: 1rem;
+      font-size: 0.9rem;
       text-align: center;
+      transition: background 0.3s;
       user-select: none;
+    }
+
+    .hashtags span:hover {
+      background-color: #d4e8dc;
       cursor: default;
-      transition: none;
     }
 
     main {
       flex: 1;
+    }
+
+    .intro {
+      background-color: #d4e8dc;
+      border-radius: 10px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 2rem;
+      color: #2e6047;
+      font-size: 1rem;
+      line-height: 1.4;
+      box-shadow: 0 2px 6px rgba(46, 96, 71, 0.15);
     }
 
     .grid {
@@ -94,7 +109,7 @@
 
     .caption {
       padding: 1rem;
-      font-size: 1rem;
+      font-size: 0.95rem;
       text-align: center;
       color: #555;
     }
@@ -107,6 +122,8 @@
       padding: 2rem 1rem;
     }
 
+    /* Responsive */
+
     @media (max-width: 768px) {
       .container {
         flex-direction: column;
@@ -115,8 +132,9 @@
       aside {
         width: 100%;
         padding: 0;
-        margin-bottom: 2rem;
-        position: static;
+        margin-bottom: 1.5rem;
+        position: relative;
+        top: auto;
       }
 
       .grid {
@@ -146,6 +164,10 @@
     </aside>
 
     <main>
+      <div class="intro">
+        <strong>Hinweis:</strong> Bitte achten Sie beim Betrachten der Bilder besonders auf die Bildqualität sowie die Ladegeschwindigkeit. Diese Aspekte werden im Rahmen der Bachelorarbeit untersucht.
+      </div>
+
       <div class="grid">
 
         <div class="card">
@@ -203,4 +225,3 @@
 
 </body>
 </html>
-
