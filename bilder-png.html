@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Effiziente Bildnutzung im Webdesign – JPEG-Testseite</title>
+  <title>Effiziente Bildnutzung im Webdesign – Testseite 3</title>
   <style>
     * {
       box-sizing: border-box;
@@ -12,183 +12,211 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #f9f9f9;
+      background: #f3f5f2;
       color: #333;
     }
 
-    .layout {
-      display: flex;
-      flex-wrap: wrap;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    aside {
-      flex: 1 1 250px;
-      background-color: #fff;
-      padding: 2rem;
-      border-right: 1px solid #eee;
-      min-height: 100vh;
-      box-shadow: 2px 0 5px rgba(0,0,0,0.05);
-    }
-
-    aside h2 {
-      font-size: 1.4rem;
-      margin-bottom: 1rem;
-      color: #555;
-    }
-
-    aside p {
-      font-size: 0.95rem;
-      line-height: 1.5;
-      color: #666;
-    }
-
-    main {
-      flex: 3 1 700px;
-      padding: 2rem;
-    }
-
     header {
+      background-color: #2e6047;
+      color: #fff;
+      padding: 2rem 1rem;
       text-align: center;
-      margin-bottom: 2rem;
     }
 
     header h1 {
+      margin: 0;
       font-size: 1.8rem;
-      margin-bottom: 0.5rem;
     }
 
     header h2 {
-      font-size: 1.2rem;
-      color: #777;
       font-weight: normal;
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+      color: #cde0d6;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1300px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    aside {
+      width: 220px;
+      padding-right: 2rem;
+      position: sticky;
+      top: 2rem;
+      align-self: flex-start;
+    }
+
+    .hashtags {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    .hashtags span {
+      background-color: #eaf2ed;
+      color: #2e6047;
+      padding: 0.5rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      text-align: center;
+      transition: background 0.3s;
+      user-select: none;
+    }
+
+    .hashtags span:hover {
+      background-color: #d4e8dc;
+      cursor: default;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .intro {
+      background-color: #d4e8dc;
+      border-radius: 10px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 2rem;
+      color: #2e6047;
+      font-size: 1rem;
+      line-height: 1.4;
+      box-shadow: 0 2px 6px rgba(46, 96, 71, 0.15);
     }
 
     .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 2rem;
+      column-count: 2;
+      column-gap: 1.5rem;
     }
 
     .card {
       background-color: #fff;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      margin-bottom: 1.5rem;
       overflow: hidden;
-      transition: transform 0.2s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-4px);
+      break-inside: avoid;
     }
 
     .card img {
-      display: block;
       width: 100%;
-      height: 200px;
-      object-fit: cover;
+      display: block;
+      height: auto;
     }
 
     .caption {
       padding: 1rem;
+      font-size: 0.95rem;
       text-align: center;
-      font-size: 1rem;
       color: #555;
     }
 
     footer {
       text-align: center;
-      font-size: 0.9rem;
-      padding: 2rem;
-      color: #aaa;
+      font-size: 0.85rem;
+      color: #999;
+      margin-top: 3rem;
+      padding: 2rem 1rem;
     }
 
     @media (max-width: 768px) {
-      .layout {
+      .container {
         flex-direction: column;
       }
 
       aside {
-        border-right: none;
-        border-bottom: 1px solid #eee;
-        min-height: auto;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 1.5rem;
+        position: relative;
+        top: auto;
+      }
+
+      .grid {
+        column-count: 1;
       }
     }
   </style>
 </head>
 <body>
 
-  <div class="layout">
+  <header>
+    <h1>Effiziente Bildnutzung im Webdesign</h1>
+    <h2>Testseite 3</h2>
+  </header>
+
+  <div class="container">
     <aside>
-      <h2>Über die Bachelorarbeit</h2>
-      <p>
-        Diese Testseite ist Bestandteil der Bachelorarbeit <em>„Effiziente Bildnutzung im Webdesign: Auswirkungen auf Ladezeiten und Nutzer*innenakzeptanz“</em>.
-        Jede der vier Testseiten verwendet ausschließlich ein bestimmtes Bildformat. Ziel ist es, die Wahrnehmung von Bildqualität und die Ladegeschwindigkeit im Vergleich zu untersuchen.
-      </p>
+      <div class="hashtags">
+        <span>#natur</span>
+        <span>#menschen</span>
+        <span>#tiere</span>
+        <span>#landschaft</span>
+        <span>#farben</span>
+        <span>#details</span>
+        <span>#porträt</span>
+      </div>
     </aside>
 
     <main>
-      <header>
-        <h1>Effiziente Bildnutzung im Webdesign</h1>
-        <h2>Bildformat-Testseite 1 </h2>
-      </header>
 
       <div class="grid">
 
         <div class="card">
-          <img src="img/animals-9262355_1280.jpg" alt="Bild 1">
-          <div class="caption">Bild 1 – Tiere</div>
+          <img src="img/animals-9262355_1280.png" alt="Bild 1">
+          <div class="caption">Bild 1 – Tiere im Wald</div>
         </div>
 
         <div class="card">
-          <img src="img/bouquet-7948558_1280.jpg" alt="Bild 2">
-          <div class="caption">Bild 2 – Blumenstrauß</div>
+          <img src="img/bouquet-7948558_1280.png" alt="Bild 2">
+          <div class="caption">Bild 2 – Blumenstrauß mit bunten Farben</div>
         </div>
 
         <div class="card">
-          <img src="img/eibsee-8572003_1280.jpg" alt="Bild 3">
-          <div class="caption">Bild 3 – Eibsee</div>
+          <img src="img/eibsee-8572003_1280.png" alt="Bild 3">
+          <div class="caption">Bild 3 – Der Eibsee bei Garmisch</div>
         </div>
 
         <div class="card">
-          <img src="img/female-model-9565629_1280.jpg" alt="Bild 4">
-          <div class="caption">Bild 4 – Porträt Frau</div>
+          <img src="img/female-model-9565629_1280.png" alt="Bild 4">
+          <div class="caption">Bild 4 – Porträt einer Frau</div>
         </div>
 
         <div class="card">
-          <img src="img/man-9581593_1280.jpg" alt="Bild 5">
-          <div class="caption">Bild 5 – Porträt Mann</div>
+          <img src="img/man-9581593_1280.png" alt="Bild 5">
+          <div class="caption">Bild 5 – Porträt eines Mannes</div>
         </div>
 
         <div class="card">
-          <img src="img/soap-bubbles-9585871_1280.jpg" alt="Bild 6">
-          <div class="caption">Bild 6 – Seifenblasen</div>
+          <img src="img/soap-bubbles-9585871_1280.png" alt="Bild 6">
+          <div class="caption">Bild 6 – Schweben der Seifenblasen</div>
         </div>
 
         <div class="card">
-          <img src="img/wallpaper-8857295_1280.jpg" alt="Bild 7">
-          <div class="caption">Bild 7 – Hintergrund</div>
+          <img src="img/wallpaper-8857295_1280.png" alt="Bild 7">
+          <div class="caption">Bild 7 – Abstrakter Hintergrund</div>
         </div>
 
         <div class="card">
-          <img src="img/white-cat-9595396_1280.jpg" alt="Bild 8">
-          <div class="caption">Bild 8 – Weiße Katze</div>
+          <img src="img/white-cat-9595396_1280.png" alt="Bild 8">
+          <div class="caption">Bild 8 – Weiße Katze mit blauen Augen</div>
         </div>
 
         <div class="card">
-          <img src="img/woman-9461838_1280.jpg" alt="Bild 9">
-          <div class="caption">Bild 9 – Frau in Rot</div>
+          <img src="img/woman-9461838_1280.png" alt="Bild 9">
+          <div class="caption">Bild 9 – Frau mit rotem Mantel</div>
         </div>
 
       </div>
-
-      <footer>
-        &copy; 2025 – Ornella Wiesmüller - Bachelorarbeit an der Fachhochschule Hagenberg
-      </footer>
     </main>
   </div>
 
+  <footer>
+    &copy; 2025 – Bachelorarbeit an der Fachhochschule Hagenberg | Ornella Wiesmüller
+  </footer>
+
 </body>
 </html>
-
