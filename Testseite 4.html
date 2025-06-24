@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Effiziente Bildnutzung im Webdesign – Testseite 4</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f3f5f2;
+      color: #333;
+    }
+
+    header {
+      background-color: #2e6047;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    header h2 {
+      font-weight: normal;
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+      color: #cde0d6;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1300px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    aside {
+      width: 220px;
+      padding-right: 2rem;
+      position: sticky;
+      top: 2rem;
+      align-self: flex-start;
+    }
+
+    .hashtags {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    .hashtags span {
+      background-color: #eaf2ed;
+      color: #2e6047;
+      padding: 0.5rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      text-align: center;
+      transition: background 0.3s;
+      user-select: none;
+    }
+
+    .hashtags span:hover {
+      background-color: #d4e8dc;
+      cursor: default;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .intro {
+      background-color: #d4e8dc;
+      border-radius: 10px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 2rem;
+      color: #2e6047;
+      font-size: 1rem;
+      line-height: 1.4;
+      box-shadow: 0 2px 6px rgba(46, 96, 71, 0.15);
+    }
+
+    .grid {
+      column-count: 2;
+      column-gap: 1.5rem;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      margin-bottom: 1.5rem;
+      overflow: hidden;
+      break-inside: avoid;
+    }
+
+    .card img {
+      width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    .caption {
+      padding: 1rem;
+      font-size: 0.95rem;
+      text-align: center;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #999;
+      margin-top: 3rem;
+      padding: 2rem 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      aside {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 1.5rem;
+        position: relative;
+        top: auto;
+      }
+
+      .grid {
+        column-count: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Effiziente Bildnutzung im Webdesign</h1>
+    <h2>Testseite 4</h2>
+  </header>
+
+  <div class="container">
+    <aside>
+      <div class="hashtags">
+        <span>#natur</span>
+        <span>#menschen</span>
+        <span>#tiere</span>
+        <span>#landschaft</span>
+        <span>#farben</span>
+        <span>#details</span>
+        <span>#porträt</span>
+      </div>
+    </aside>
+
+    <main>
+
+      <div class="grid">
+
+        <div class="card">
+          <img src="img/animals-9262355_1280.webp" alt="Bild 1">
+          <div class="caption">Bild 1 – Tiere im Wald</div>
+        </div>
+
+        <div class="card">
+          <img src="img/bouquet-7948558_1280.webp" alt="Bild 2">
+          <div class="caption">Bild 2 – Blumenstrauß mit bunten Farben</div>
+        </div>
+
+        <div class="card">
+          <img src="img/eibsee-8572003_1280.webp" alt="Bild 3">
+          <div class="caption">Bild 3 – Der Eibsee bei Garmisch</div>
+        </div>
+
+        <div class="card">
+          <img src="img/female-model-9565629_1280.webp" alt="Bild 4">
+          <div class="caption">Bild 4 – Porträt einer Frau</div>
+        </div>
+
+        <div class="card">
+          <img src="img/man-9581593_1280.webp" alt="Bild 5">
+          <div class="caption">Bild 5 – Porträt eines Mannes</div>
+        </div>
+
+        <div class="card">
+          <img src="img/soap-bubbles-9585871_1280.webp" alt="Bild 6">
+          <div class="caption">Bild 6 – Schweben der Seifenblasen</div>
+        </div>
+
+        <div class="card">
+          <img src="img/wallpaper-8857295_1280.webp" alt="Bild 7">
+          <div class="caption">Bild 7 – Abstrakter Hintergrund</div>
+        </div>
+
+        <div class="card">
+          <img src="img/white-cat-9595396_1280.webp" alt="Bild 8">
+          <div class="caption">Bild 8 – Weiße Katze mit blauen Augen</div>
+        </div>
+
+        <div class="card">
+          <img src="img/woman-9461838_1280.webp" alt="Bild 9">
+          <div class="caption">Bild 9 – Frau mit rotem Mantel</div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    &copy; 2025 – Bachelorarbeit an der Fachhochschule Hagenberg | Ornella Wiesmüller
+  </footer>
+
+</body>
+</html>
