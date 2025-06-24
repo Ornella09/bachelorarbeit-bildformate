@@ -2,58 +2,144 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <title>Bildformat-Test – JPG</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bildformat-Test – JPEG</title>
   <style>
+    :root {
+      --primary: #222;
+      --background: #f7f7f7;
+      --card-bg: #fff;
+      --text-color: #333;
+      --caption-color: #666;
+    }
+
     body {
-      font-family: sans-serif;
-      max-width: 800px;
+      margin: 0;
+      background-color: var(--background);
+      font-family: 'Helvetica Neue', sans-serif;
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: var(--primary);
+      color: white;
+      padding: 2.5rem 1rem 1.5rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      color: #ccc;
+      font-size: 1.1rem;
+    }
+
+    .container {
+      max-width: 1200px;
       margin: 2rem auto;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
     }
-    h1 {
-      text-align: center;
+
+    .card {
+      background-color: var(--card-bg);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
     }
-    img {
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card img {
       width: 100%;
-      margin: 1.5rem 0;
-      border: 1px solid #ccc;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      height: auto;
+      display: block;
     }
+
     .caption {
+      padding: 1rem;
       text-align: center;
-      font-size: 0.85rem;
-      color: #666;
-      margin-bottom: 1.5rem;
+      font-size: 1rem;
+      color: var(--caption-color);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 2rem 1rem;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
-  <h1>Testseite 1</h1>
 
-  <img src="img/animals-9262355_1280.jpg" alt="Bild 1">
-  <div class="caption">Bild 1</div>
+  <header>
+    <h1>Bildformat-Test: JPEG</h1>
+    <p>Vergleich von Bildqualität und Ladezeit anhand realer Motive</p>
+  </header>
 
-  <img src="img/bouquet-7948558_1280.jpg" alt="Bild 2">
-  <div class="caption">Bild 2</div>
+  <div class="container">
 
-  <img src="img/eibsee-8572003_1280.jpg" alt="Bild 3">
-  <div class="caption">Bild 3</div>
-  
-  <img src="img/female-model-9565629_1280.jpg" alt="Bild 4">
-  <div class="caption">Bild 4</div>
+    <div class="card">
+      <img src="img/animals-9262355_1280.jpg" alt="Bild 1" />
+      <div class="caption">Bild 1 – Tiere</div>
+    </div>
 
-  <img src="img/man-9581593_1280.jpg" alt="Bild 5">
-  <div class="caption">Bild 5</div>
+    <div class="card">
+      <img src="img/bouquet-7948558_1280.jpg" alt="Bild 2" />
+      <div class="caption">Bild 2 – Blumenstrauß</div>
+    </div>
 
-  <img src="img/soap-bubbles-9585871_1280.jpg" alt="Bild 6">
-  <div class="caption">Bild 6</div>
+    <div class="card">
+      <img src="img/eibsee-8572003_1280.jpg" alt="Bild 3" />
+      <div class="caption">Bild 3 – Natursee</div>
+    </div>
 
-  <img src="img/wallpaper-8857295_1280.jpg" alt="Bild 7">
-  <div class="caption">Bild 7</div>
+    <div class="card">
+      <img src="img/female-model-9565629_1280.jpg" alt="Bild 4" />
+      <div class="caption">Bild 4 – Model-Porträt</div>
+    </div>
 
-  <img src="img/white-cat-9595396_1280.jpg" alt="Bild 8">
-  <div class="caption">Bild 8</div>
+    <div class="card">
+      <img src="img/man-9581593_1280.jpg" alt="Bild 5" />
+      <div class="caption">Bild 5 – Porträt Mann</div>
+    </div>
 
-  <img src="img/woman-9461838_1280.jpg" alt="Bild 9">
-  <div class="caption">Bild 9</div>
+    <div class="card">
+      <img src="img/soap-bubbles-9585871_1280.jpg" alt="Bild 6" />
+      <div class="caption">Bild 6 – Seifenblasen</div>
+    </div>
+
+    <div class="card">
+      <img src="img/wallpaper-8857295_1280.jpg" alt="Bild 7" />
+      <div class="caption">Bild 7 – Hintergrund</div>
+    </div>
+
+    <div class="card">
+      <img src="img/white-cat-9595396_1280.jpg" alt="Bild 8" />
+      <div class="caption">Bild 8 – Weiße Katze</div>
+    </div>
+
+    <div class="card">
+      <img src="img/woman-9461838_1280.jpg" alt="Bild 9" />
+      <div class="caption">Bild 9 – Frau im Portrait</div>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Bildformat-Test – Für wissenschaftliche Vergleichszwecke
+  </footer>
+
 </body>
 </html>
