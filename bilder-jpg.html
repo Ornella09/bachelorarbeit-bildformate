@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Effiziente Bildnutzung im Webdesign – JPEG-Testseite</title>
+  <title>Effiziente Bildnutzung im Webdesign – Testseite 1</title>
   <style>
     * {
       box-sizing: border-box;
@@ -17,26 +17,22 @@
     }
 
     header {
-      background: linear-gradient(135deg, #2e6047, #3b7b5d);
+      background-color: #2e6047;
       color: #fff;
-      padding: 3rem 1rem;
+      padding: 2rem 1rem;
       text-align: center;
-      position: relative;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.2rem;
-      font-weight: bold;
+      font-size: 1.8rem;
     }
 
-    header p {
+    header h2 {
+      font-weight: normal;
       font-size: 1.1rem;
-      color: #dcefe3;
       margin-top: 0.5rem;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
+      color: #cde0d6;
     }
 
     .container {
@@ -66,13 +62,12 @@
       border-radius: 20px;
       font-size: 0.9rem;
       text-align: center;
-      cursor: pointer;
       transition: background 0.3s;
     }
 
-    .hashtags span.active {
-      background-color: #2e6047;
-      color: #fff;
+    .hashtags span:hover {
+      background-color: #d4e8dc;
+      cursor: default;
     }
 
     main {
@@ -106,10 +101,6 @@
       color: #555;
     }
 
-    .card[data-tags] {
-      display: block;
-    }
-
     footer {
       text-align: center;
       font-size: 0.85rem;
@@ -138,68 +129,69 @@
 <body>
 
   <header>
-    <h1>Visuelle Effizienz im Fokus</h1>
-    <p>Diese Seite ist Teil einer Bachelorarbeit zum Einfluss von Bildformaten auf Ladezeit und visuelle Wahrnehmung im Web. Die hier gezeigten Bilder nutzen ausschließlich das Format: <strong>JPEG</strong>.</p>
+    <h1>Effiziente Bildnutzung im Webdesign</h1>
+    <h2>Testseite 1</h2>
   </header>
 
   <div class="container">
     <aside>
       <div class="hashtags">
-        <span data-filter="natur">#natur</span>
-        <span data-filter="menschen">#menschen</span>
-        <span data-filter="tiere">#tiere</span>
-        <span data-filter="landschaft">#landschaft</span>
-        <span data-filter="farben">#farben</span>
-        <span data-filter="porträt">#porträt</span>
+        <span>#natur</span>
+        <span>#menschen</span>
+        <span>#tiere</span>
+        <span>#landschaft</span>
+        <span>#farben</span>
+        <span>#details</span>
+        <span>#porträt</span>
       </div>
     </aside>
 
     <main>
       <div class="grid">
 
-        <div class="card" data-tags="tiere natur">
+        <div class="card">
           <img src="img/animals-9262355_1280.jpg" alt="Bild 1">
-          <div class="caption">Tiere im Wald</div>
+          <div class="caption">Bild 1 – Tiere im Wald</div>
         </div>
 
-        <div class="card" data-tags="farben natur">
+        <div class="card">
           <img src="img/bouquet-7948558_1280.jpg" alt="Bild 2">
-          <div class="caption">Bunter Blumenstrauß</div>
+          <div class="caption">Bild 2 – Blumenstrauß mit bunten Farben</div>
         </div>
 
-        <div class="card" data-tags="landschaft natur">
+        <div class="card">
           <img src="img/eibsee-8572003_1280.jpg" alt="Bild 3">
-          <div class="caption">Eibsee in den Alpen</div>
+          <div class="caption">Bild 3 – Der Eibsee bei Garmisch</div>
         </div>
 
-        <div class="card" data-tags="menschen porträt">
+        <div class="card">
           <img src="img/female-model-9565629_1280.jpg" alt="Bild 4">
-          <div class="caption">Porträt einer Frau</div>
+          <div class="caption">Bild 4 – Porträt einer Frau</div>
         </div>
 
-        <div class="card" data-tags="menschen porträt">
+        <div class="card">
           <img src="img/man-9581593_1280.jpg" alt="Bild 5">
-          <div class="caption">Porträt eines Mannes</div>
+          <div class="caption">Bild 5 – Porträt eines Mannes</div>
         </div>
 
-        <div class="card" data-tags="farben">
+        <div class="card">
           <img src="img/soap-bubbles-9585871_1280.jpg" alt="Bild 6">
-          <div class="caption">Seifenblasen im Licht</div>
+          <div class="caption">Bild 6 – Schweben der Seifenblasen</div>
         </div>
 
-        <div class="card" data-tags="farben">
+        <div class="card">
           <img src="img/wallpaper-8857295_1280.jpg" alt="Bild 7">
-          <div class="caption">Abstrakter Hintergrund</div>
+          <div class="caption">Bild 7 – Abstrakter Hintergrund</div>
         </div>
 
-        <div class="card" data-tags="tiere">
+        <div class="card">
           <img src="img/white-cat-9595396_1280.jpg" alt="Bild 8">
-          <div class="caption">Weiße Katze mit blauen Augen</div>
+          <div class="caption">Bild 8 – Weiße Katze mit blauen Augen</div>
         </div>
 
-        <div class="card" data-tags="menschen porträt">
+        <div class="card">
           <img src="img/woman-9461838_1280.jpg" alt="Bild 9">
-          <div class="caption">Frau im roten Mantel</div>
+          <div class="caption">Bild 9 – Frau mit rotem Mantel</div>
         </div>
 
       </div>
@@ -207,32 +199,8 @@
   </div>
 
   <footer>
-    &copy; 2025 – Bachelorarbeit zur Web-Performance | [Dein Name]
+    &copy; 2025 – Bachelorarbeit an der Fachhochschule Hagenberg | Ornella Wiesmüller
   </footer>
-
-  <script>
-    const filterTags = document.querySelectorAll('.hashtags span');
-    const cards = document.querySelectorAll('.card');
-
-    filterTags.forEach(tag => {
-      tag.addEventListener('click', () => {
-        // Aktiven Tag zurücksetzen
-        filterTags.forEach(t => t.classList.remove('active'));
-        tag.classList.add('active');
-
-        const selectedTag = tag.dataset.filter;
-
-        cards.forEach(card => {
-          const tags = card.dataset.tags.split(" ");
-          if (tags.includes(selectedTag)) {
-            card.style.display = 'block';
-          } else {
-            card.style.display = 'none';
-          }
-        });
-      });
-    });
-  </script>
 
 </body>
 </html>
